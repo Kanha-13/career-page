@@ -1,0 +1,10 @@
+<div class="mb-4 border-bottom pb-2 row">
+  <div class="col-11">
+  <h4 class="text-secondary mb-1">{{job['title']}}</h4>
+  <div><b>Location:</b> {{job['location']}}</div>
+  <div><b>Salary:</b> {{job['salary'] if job['salary'] else "Not disclosed"}}</div>
+    </div>
+  <div class="col-1">
+  <button type="button" class="btn btn-outline-primary">Apply</button>
+  </div>
+</div>
