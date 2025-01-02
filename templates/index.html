@@ -16,12 +16,20 @@
   </style>
 </head>
 <body>
+  {%include 'navbar.html' %}
+  <img class="img-fluid mb-3" id="banner" src="https://a9f60c9b-36f5-4ec4-a886-c66de2a541c3-00-lkr7jg8quto2.pike.replit.dev/static/banner.jpg" />
   <div class="container">
-    
   <h1 class="text-center mt-2 mb-4">Zoop Career</h1>
-  <img class="img-fluid" id="banner" src="https://a9f60c9b-36f5-4ec4-a886-c66de2a541c3-00-lkr7jg8quto2.pike.replit.dev/static/banner.jpg" />
+  
     <h2 class="text-center mt-2 mb-4">About Zoop</h2>
+    <div class="row mb-5">
+    <div class="col-md-6">
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a ipsum eu lorem pulvinar imperdiet. Vestibulum justo augue, mollis id luctus vel, tincidunt ut diam. Nam non risus ipsum. Pellentesque congue tincidunt velit, ac hendrerit nisl efficitur non. Aliquam consequat eget ex quis efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eros lacus, suscipit quis dolor cursus, varius tincidunt est. Nunc ullamcorper purus eu dictum iaculis. Etiam mattis nec odio sed efficitur. Suspendisse est urna, semper ac scelerisque vitae, pretium eu leo. Quisque bibendum lacinia tortor.</p>
+    </div>
+    <div class="d-none d-md-block col-md-6">
+      <img src="/static/people.jpg" style="height:320px; border-radius:4px"/>
+    </div>
+    </div>
   <h2 class="text-center mt-2 mb-4">Job Openings</h2>
     <div>
       {% for job in jobs %}
@@ -30,7 +38,7 @@
     </div>
     <div class="text-center">
   <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-4">Copyright 2022, Zoop</p>
+      {%include 'footer.html' %}
     </div>
   </div>
 </body>
